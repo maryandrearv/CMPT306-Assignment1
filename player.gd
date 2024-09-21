@@ -11,6 +11,7 @@ func _ready() -> void:
 # This function is called when another physics body enters the Player's Area2D
 func _on_body_entered(body:Node2D) -> void:
 	print(body)
+	get_tree().change_scene_to_file("res://RootScene.tscn")
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
